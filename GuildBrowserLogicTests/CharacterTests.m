@@ -17,6 +17,7 @@
 {
     // 1
     NSDictionary *_characterDetailJson;
+    Character *_testGuy;
 }
 
 - (void)setUp {
@@ -39,6 +40,7 @@
     
     
     _characterDetailJson = json;
+    _testGuy = [[Character alloc] initWithCharacterDetailData:_characterDetailJson];
 }
 
 - (void)tearDown {
